@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --main-bg-color: #21a650;
+  --second-bg-color: #2abf5e;
+  --second-variable-color: #1b8c37;
+  --text-variable01-color: #d9ad29;
+  --text-variable02-color: #f2ecd8;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Mali", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  height: 600px;
+  background: url(https://burst.shopifycdn.com/photos/a-colorful-fruit-cart-on-wheels.jpg?width=925&format=pjpg&exif=1&iptc=1)
+  center center no-repeat;
+  background-size: cover;
+}
+
+nav {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li a {
+  text-transform: uppercase;
+  color: var(--text-variable02-color);
+  font-size: 1.1rem;
+}
+
+.info {
+  height: 150px;
+  background-color: var(--main-bg-color);
+  /* mediaquerys */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.info div {
+  font-family: "Arial";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: var(--text-variable02-color);
+}
+
+/* .info__payments {
+  border-left: 1px solid var(--text-variable02-color);
+  border-right: 1px solid var(--text-variable02-color);
+  padding: 0.2em 1em;
+} */
+
+/* SECTION PRODUCTS */
+
+.products {
+  /* margin-top: 2em; */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.products div {
+  margin-top: 2em;
+}
+
+/* CONTACTO */
+.contacto {
+  margin-top: 1em;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--second-bg-color);
+  height: 100%;
+  border-bottom: 2px solid rgba(217, 173, 41, 0.8);
+  display: flex;
+  justify-content: center;
+}
+
+.contacto h3 {
+  margin: 1em 1em;
+  text-align: center;
+  color: var(--text-variable02-color);
+  font-size: 1.4em;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 0 2em;
+}
+
+input {
+  height: 35px;
+  width: 230px;
+  background: none;
+  border-style: none;
+  color: var(--text-variable02-color);
+  border-bottom: 1.8px solid var(--text-variable02-color);
+  outline: none;
+}
+
+
+input::placeholder {
+  color: var(--text-variable02-color);
+  padding-left: .1em;
+}
+
+.btn {
+  margin-top: 2em;
+  color:var(--second-variable-color);
+  background-color: var(--text-variable02-color);
+  border-style: none;
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(231, 231, 231, 0.8);
+}
+
+.btn:active {
+  background-color: var(--text-variable01-color);
+}
+/* FOOTER  */
+
+footer {
+  background-color: var(--second-variable-color);
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-variable02-color);
+}
+
+footer ul{
+  margin: 1.2em 1em;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul li a {
+  margin: 2em 0;
+}
+
+.redes img {
+  margin-left: 1em;
+  cursor: pointer;
+}
