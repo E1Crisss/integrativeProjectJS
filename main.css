@@ -85,6 +85,60 @@ li a {
 .products div {
   margin-top: 2em;
 }
+/* PAG PRODUCTS SELECTION*/
+.selecProducts{
+  background-color: var(--second-variable-color);
+  width: 100%;
+  height: 80px;
+  margin: auto auto;
+}
+
+
+.selecProducts input[type=submit]{
+  margin-left: 1em;
+  background-color: var(--text-variable01-color);
+  width: 130px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* PAG PRODUCTS SELECTION*/
+
+/* PAG PRODUCTS */
+#products {
+  margin: 4em .5em 0 .5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 98%;
+}
+
+.card {
+  background-color:var(--main-bg-color);
+  border-radius: 8px;
+  padding-top: 1em;
+  text-align: center;
+  width: 180px;
+  height: 200px;
+  margin: 3em .8em;
+  color: var(--text-variable02-color);
+}
+
+.card img{
+  width: 120px;
+  height: 90px;
+  border-radius: 3px;
+  margin-top: -4em;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card figcaption{
+  margin-top: 1em;
+}
+
+/* PAG PRODUCTS */
 
 /* CONTACTO */
 .contacto {
