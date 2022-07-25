@@ -26,50 +26,53 @@ const $cards = document.querySelector(".cards"),
 
 
 
-const mostrarProductos = () => {
-  fruits.forEach(fruta => {
-    $template.querySelector("img").setAttribute("src", fruta.img);
-    $template.querySelector("img").setAttribute("alt", fruta.name);
-    $template.querySelector("img").setAttribute("width", "140px");
-    $template.querySelector("figcaption").textContent = fruta.name.toUpperCase();
-    let $clone = $template.cloneNode(true);
-    $fragment.appendChild($clone);
+  const mostrarProductos = () => {
+    fruits.forEach(fruta => {
+      $template.querySelector("img").setAttribute("src", fruta.img);
+      $template.querySelector("img").setAttribute("alt", fruta.name);
+      $template.querySelector("img").setAttribute("width", "140px");
+      $template.querySelector("h3").textContent = fruta.name.toUpperCase();
+      
+      $template.querySelector("p").textContent = fruta.type;
+      $template.querySelector("span").textContent = fruta.price;
+      let $clone = $template.cloneNode(true);
+      $fragment.appendChild($clone);
+    })
+    $products.appendChild($fragment);
+  };
+    
+  
+  
+  const listSelect = () =>{
+    let $selecProduct = document.getElementById('selecProduct');
+    let searchType = $selecProduct.options[$selecProduct.selectedIndex].text.toLowerCase();
+  
+    while ($products.firstChild) {
+      $products.removeChild($products.firstChild);
+    }
+    
+    const mostrarFruits = fruits.filter(fruta => fruta.type === searchType);
+    console.log("🚀 ~ file: main.js ~ line 52 ~ listSelect ~ mostrarFruits", mostrarFruits)
+    
+      if(mostrarFruits){
+        mostrarFruits.forEach(item =>{
+          $template.querySelector("img").setAttribute("src", item.img);
+          $template.querySelector("img").setAttribute("alt", item.name);
+          $template.querySelector("img").setAttribute("width", "140px");
+          $template.querySelector("h3").textContent = item.name.toUpperCase();
+          let $clone = $template.cloneNode(true);
+          $fragment.appendChild($clone);
+  
+        })
+        $products.appendChild($fragment);
+  
+        }
+      } 
+  $btnSP.addEventListener('click', (e)=> {
+    e.preventDefault();
+    listSelect();
   })
-  $products.appendChild($fragment);
-};
   
-
-
-const listSelect = () =>{
-  let $selecProduct = document.getElementById('selecProduct');
-  let searchType = $selecProduct.options[$selecProduct.selectedIndex].text.toLowerCase();
-
-  while ($products.firstChild) {
-    $products.removeChild($products.firstChild);
-  }
-  
-  const mostrarFruits = fruits.filter(fruta => fruta.type === searchType);
-  console.log("🚀 ~ file: main.js ~ line 52 ~ listSelect ~ mostrarFruits", mostrarFruits)
-  
-    if(mostrarFruits){
-      mostrarFruits.forEach(item =>{
-        $template.querySelector("img").setAttribute("src", item.img);
-        $template.querySelector("img").setAttribute("alt", item.name);
-        $template.querySelector("img").setAttribute("width", "140px");
-        $template.querySelector("figcaption").textContent = item.name.toUpperCase();
-        let $clone = $template.cloneNode(true);
-        $fragment.appendChild($clone);
-
-      })
-      $products.appendChild($fragment);
-
-      }
-    } 
-$btnSP.addEventListener('click', (e)=> {
-  e.preventDefault();
-  listSelect();
-})
-
-document.addEventListener('DOMContentLoaded', (e) => {
-  mostrarProductos();
-})
+  document.addEventListener('DOMContentLoaded', (e) => {
+    mostrarProductos();
+  })
