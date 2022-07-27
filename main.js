@@ -169,6 +169,42 @@ const listSelect = () => {
 
 
 
+const mostrarOrden = () => {
+  const $selecValue = document.getElementById('selecValue');
+  const ordenValue = $selecValue.options[$selecValue.selectedIndex].text.toLowerCase();
+  
+  while ($products.firstChild) {
+    $products.removeChild($products.firstChild);
+  }
+  console.log(ordenValue, 'ordervalue')
+
+  fruits.sort((a,b) => {
+    return b.price -a.price
+  });
+  // mostrarProductos()
+  console.log(fruits)
+ const verMenor = fruits;
+  if (verMenor) {
+    verMenor.forEach((item) => {
+      $template.querySelector("img").setAttribute("src", item.img);
+      $template.querySelector("img").setAttribute("alt", item.name);
+      $template.querySelector("img").setAttribute("width", "140px");
+      $template.querySelector("h3").textContent = item.name.toUpperCase();
+  
+      $template.querySelector("p").textContent = item.type;
+      $template.querySelector("span").textContent = item.price;
+      let $clone = $template.cloneNode(true);
+      $fragment.appendChild($clone);
+    });
+    $products.appendChild($fragment);
+  };
+    let $mFiltro = document.createElement('p');
+    // $mFiltro.innerHTML = `por: ${searchType}`;
+    $mostrarFiltro.appendChild($mFiltro);
+    $products.appendChild($fragment);
+  };
+
+
 
 const reset = () => {
   while ($products.firstChild) {
@@ -186,13 +222,19 @@ const reset = () => {
 // Button for Submit - Reset
 $btnSP.addEventListener("click", (e) => {
   e.preventDefault();
-  listSelect();
+
+  if(listSelect()){
+    listSelect()
+  }
+  // listSelect();
+  // mostrarOrden();
   
 
 });
 
 $btnR.addEventListener("click", (e) => {
   reset();
+  console.log(fruits)
 });
 // Button for Submit - Reset
 

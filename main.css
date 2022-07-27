@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -17,15 +18,16 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    font-family: "Mali", Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 .header {
   height: 600px;
   background: url(https://burst.shopifycdn.com/photos/a-colorful-fruit-cart-on-wheels.jpg?width=925&format=pjpg&exif=1&iptc=1)
-  center center no-repeat;
+    center center no-repeat;
   background-size: cover;
 }
 
@@ -59,9 +61,8 @@ li a {
 }
 
 .info img {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
-
 
 .info div {
   font-family: "Arial";
@@ -71,11 +72,44 @@ li a {
   color: var(--text-variable02-color);
 }
 
+.title {
+  width: 90vw;
+  margin: 2em 1em 0 1em;
+  color: var(--text-variable02-color);
+  font-family: "Sofia";
+  text-align: center;
+  font-size: 1.3em;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.8);
+}
 
+.title span {
+  font-size: 1.8em;
+  display: inline;
+  border-bottom: 5px solid #f2ecd8;
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(217, 173, 41, 0.8);
+}
+
+/* SECTION NOSOTROS */
+.nosotros {
+  text-align: center;
+  padding-top: 1.5em;
+  margin: 0 2em;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.nosotros h2 {
+  margin: 1em 0;
+}
+
+.nosotros img {
+  margin-top: 1.5em;
+}
+/* SECTION NOSOTROS */
 /* SECTION PRODUCTS */
 
 .products {
-  /* margin-top: 2em; */
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -86,8 +120,9 @@ li a {
 .products div {
   margin-top: 2em;
 }
+/* SECTION PRODUCTS */
 /* PAG PRODUCTS SELECTION*/
-.selecProducts{
+.selecProducts {
   background-color: var(--second-variable-color);
   width: 100%;
   height: 120px;
@@ -98,22 +133,23 @@ li a {
   justify-content: space-around;
 }
 
-.selecProducts h4, span{
+.selecProducts h4,
+span {
   display: inline-block;
-  margin-left: .5em;
+  margin-left: 0.5em;
   color: var(--text-variable02-color);
 }
 
-.selecProducts select{
+.selecProducts select {
   width: 120px;
   height: 30px;
   margin: 1em 1em;
   border-radius: 5px;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
-
-.selecProducts input[type=submit], input[type=button]{
+.selecProducts input[type="submit"],
+input[type="button"] {
   margin-left: 1em;
   background-color: var(--text-variable01-color);
   width: 110px;
@@ -123,21 +159,21 @@ li a {
   cursor: pointer;
 }
 
-.selecProducts input[type=submit]:hover, input[type=button]:hover{
+.selecProducts input[type="submit"]:hover,
+input[type="button"]:hover {
   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.selecProducts input[type=submit]:disabled{
+.selecProducts input[type="submit"]:disabled {
   pointer-events: none;
   background-color: #aa975d;
 }
-
 
 /* PAG PRODUCTS SELECTION*/
 
 /* PAG PRODUCTS */
 #products {
-  margin: 4em .5em 0 .5em;
+  margin: 4em 0.5em 0 0.5em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -145,67 +181,66 @@ li a {
 }
 
 .card {
-  background-color:var(--main-bg-color);
+  background-color: var(--main-bg-color);
   border-radius: 8px;
   width: 210px;
   height: 110px;
-  margin: 3em .8em;
+  margin: 3em 0.8em;
   color: var(--text-variable02-color);
   display: flex;
   flex-direction: column;
-  align-items:center;
-  justify-content:center;
-  transition : 0.2s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
 }
 
-.card:hover{
+.card:hover {
   height: 200px;
 }
 
 .content {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
 }
 
 .card .content {
-  position : relative;
-  top : -95px;
-  padding : 0px 15px;
-  color : white;
-  text-align : center;
-  visibility : hidden;
-  opacity : 0;
-  transition : 0.2s ease-in-out;
+  position: relative;
+  top: -95px;
+  padding: 0px 15px;
+  color: white;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
 }
 
 .card:hover .content {
-   margin-top : 110px;
-   visibility : visible;
-   opacity : 1;
-   transition-delay: 0.4s;
+  margin-top: 110px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.4s;
 }
-.card img{
+.card img {
   width: 180px;
   height: 120px;
-  background-color:white;
+  background-color: white;
   padding: 8px 8px;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.btn-buy{
-  background-color:white;
+.btn-buy {
+  background-color: white;
   color: green;
   margin-top: 12px;
   width: 130px;
-  border-radius:5px;
-  cursor:pointer;
+  border-radius: 5px;
+  cursor: pointer;
   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.3);
 }
-
 
 /* PAG PRODUCTS */
 
@@ -245,15 +280,14 @@ input {
   outline: none;
 }
 
-
 input::placeholder {
   color: var(--text-variable02-color);
-  padding-left: .1em;
+  padding-left: 0.1em;
 }
 
 .btn {
   margin-top: 2em;
-  color:var(--second-variable-color);
+  color: var(--second-variable-color);
   background-color: var(--text-variable02-color);
   border-style: none;
   width: 150px;
@@ -271,21 +305,27 @@ input::placeholder {
 /* FOOTER  */
 
 footer {
-  background-color: var(--second-variable-color);
+  background: url(https://burst.shopifycdn.com/photos/a-colorful-fruit-cart-on-wheels.jpg?width=925&format=pjpg&exif=1&iptc=1)
+    center center no-repeat;
+  background-size: cover;
   padding: 1em 0;
+  width: 100vw;
+  height: 180px;
   display: flex;
   flex-direction: column;
+  align-items:center;
   justify-content: space-around;
-  align-items: center;
   color: var(--text-variable02-color);
 }
 
-footer ul{
-  margin: 1.2em 1em;
-  width: 100%;
+footer ul {
+  margin: -1em 0 1.2em 0;
+  width: 100vw;
   text-align: center;
   display: flex;
   justify-content: space-around;
+  padding: 12px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer ul li a {
@@ -295,4 +335,16 @@ footer ul li a {
 .redes img {
   margin-left: 1em;
   cursor: pointer;
+}
+
+
+.copy {
+  /* background-color: #d9ad29; */
+  padding-top: 1em;
+  /* width: 100vw; */
+  height: 50px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 }

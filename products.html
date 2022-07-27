@@ -14,7 +14,7 @@
     <nav>
       <ul>
         <li><a href="./index.html">inicio</a></li>
-        <li><a href="#contacto">nosotros</a></li>
+        <li><a href="index.html#sec-nosotros">nosotros</a></li>
         <li>
             <img
             src="https://cdn-icons.flaticon.com/png/512/1617/premium/1617560.png?token=exp=1657403107~hmac=b1190b836e642ee1196dfb36b9e5b5dc"
@@ -26,6 +26,7 @@
         <li><a href="#">Log in</a></li>
       </ul>
     </nav>
+    <div class="title"><h1>“Comer es una necesidad, pero comer de forma inteligente es un <span>arte</span>”</h1></div>
   </header>
 <article class="selecProducts">
   <form action="">
@@ -38,7 +39,9 @@
       <option value="">Bayas</option>
     </select>
     <select id="selecValue">
-      <option value="0" selected disabled>Ordenar</option>
+      <option value="" selected disabled>Ordenar</option>
+      <option value="" >Mayor</option>
+      <option value="" >Menor</option>
     </select>
     <input type="submit" value="Filtrar" id="btnSP">
     <input type="button" value="Reset" id="btnReset">
@@ -76,8 +79,7 @@
     <img src="./img/gorjeo.png" width="42px" alt="twitter">
     <img src="./img/instagram.png" width="42px" alt="instagram">
   </div>
-  <footer><p>©2022 Cristian Manuel Gauna</p></footer>
-  
+  <div class="copy"><p>©2022 Cristian Manuel Gauna</p></div>
 </footer>
 
 <script src="./main.js"></script>

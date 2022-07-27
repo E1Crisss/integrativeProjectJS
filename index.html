@@ -12,28 +12,30 @@
       <nav>
         <ul>
           <li><a href="./index.html">inicio</a></li>
-          <li><a href="#contacto">Nosotros</a></li>
+          <li><a href="#sec-nosotros">Nosotros</a></li>
           <li>
             <img
-            src="https://cdn-icons.flaticon.com/png/512/1617/premium/1617560.png?token=exp=1657403107~hmac=b1190b836e642ee1196dfb36b9e5b5dc"
-            alt=""
-            width="64px"
+              src="https://cdn-icons.flaticon.com/png/512/1617/premium/1617560.png?token=exp=1657403107~hmac=b1190b836e642ee1196dfb36b9e5b5dc"
+              alt=""
+              width="64px"
             />
           </li>
           <li><a href="./products.html">productos</a></li>
           <li><a href="#">Log in</a></li>
         </ul>
       </nav>
+      <div class="title">
+        <h1>
+          “Comer es una necesidad, pero comer de forma inteligente es un
+          <span>arte</span>”
+        </h1>
+      </div>
     </header>
 
     <article class="info">
       <div class="info__shipping">
         <p>envios a toda argentina</p>
-        <img
-          src="./img/info/entrega.png"
-          alt=""
-          width="58px"
-        />
+        <img src="./img/info/entrega.png" alt="" width="58px" />
       </div>
       <div class="info__payments">
         <p>distintos medios de pagos</p>
@@ -45,14 +47,34 @@
       </div>
       <div class="info__segurity">
         <p>compra segura datos protegidos</p>
-        <img
-          src="./img/info/metodo-de-pago.png"
-          alt=""
-          width="58px"
-        />
+        <img src="./img/info/metodo-de-pago.png" alt="" width="58px" />
       </div>
     </article>
-    <article class="products" >
+    <article id="sec-nosotros" class="nosotros">
+      <h2>QUIÉNES SOMOS</h2>
+      <p>
+        ¡Una familia con mucha #PasiónPorLaFruta! Fanáticos de lo saludable y
+        especialistas en el cuidado, maduración y distribución de la fruta.
+        ¿Nuestra preferida? ¡La #Manzana! Un legado que se hizo pasión. ¡Cuatro
+        generaciones llevando las frutas más ricas y sabrosas a cada rincón de
+        la Argentina!
+      </p>
+      <h2>¿Qué hacemos?</h2>
+      <p>
+        ¡Abastecemos la sociedad con las más ricas frutas nacionales e
+        importadas! Cuidamos a nuestras frutas atendiendo cada detalle con
+        profesionalismo, dedicación y compromiso. Trabajamos para crear
+        conciencia sobre la alimentación saludable. ¡Siempre abiertos a nuevos
+        desafíos y pensando cómo hacerlo mejor!
+      </p>
+
+      <img
+        src="https://c.tenor.com/G9va_GUNufAAAAAi/banana-dancing-happy-banana.gif"
+        alt="Banana Dancing"
+        width="120px"
+      />
+    </article>
+    <article class="products">
       <div><img src="./img/fruta (1).jpg" alt="toranjo" width="330px" /></div>
       <div><img src="./img/fruta (2).jpg" alt="apple" width="330px" /></div>
       <div><img src="./img/fruta (3).jpg" alt="orange" width="330px" /></div>
@@ -61,11 +83,10 @@
     <article class="contacto" id="contacto">
       <div>
         <form action="">
-            <h3>Suscribite para recibi nuestras ofertas</h3>
-            <input type="text" placeholder="Name">
-            <input type="email" name="" id="" placeholder="Email">
-            <input type="text" placeholder="Type Fruit">
-            <input type="submit" class="btn" id="btn">
+          <h3>Suscribite para recibi nuestras ofertas</h3>
+          <input type="text" placeholder="Name" />
+          <input type="email" name="" id="" placeholder="Email" />
+          <input type="submit" class="btn" id="btn" />
         </form>
       </div>
       <div>
@@ -76,21 +97,20 @@
     <footer>
       <div>
         <ul>
-          <li><a href="./index.html">inicio</a></li>
-          <li><a href="#">nosotros</a></li>
+          <li><a href="#inicio">inicio</a></li>
+          <li><a href="#sec-nosotros">nosotros</a></li>
           <li><a href="./products.html">productos</a></li>
           <li><a href="#">Log in</a></li>
         </ul>
       </div>
       <div class="redes">
-        <img src="./img/facebook.png" width="42px" alt="facebook">
-        <img src="./img/gorjeo.png" width="42px" alt="twitter">
-        <img src="./img/instagram.png" width="42px" alt="instagram">
+        <img src="./img/facebook.png" width="42px" alt="facebook" />
+        <img src="./img/gorjeo.png" width="42px" alt="twitter" />
+        <img src="./img/instagram.png" width="42px" alt="instagram" />
       </div>
-      <footer><p>©2022 Cristian Manuel Gauna</p></footer>
-      
+      <div class="copy"><p>©2022 Cristian Manuel Gauna</p></div>
     </footer>
 
-    <script src="./main.js"></script>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
