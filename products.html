@@ -30,15 +30,20 @@
 <article class="selecProducts">
   <form action="">
     <select name="" id="selecProduct">
-      <option value="" selected disabled> TIPO DE FRUTA</option>
+      <option value="" selected disabled>Tipo de Fruta</option>
       <option value="">Citricos</option>
       <option value="">Exoticas</option>
       <option value="">Dulces</option>
       <option value="">Secos</option>
       <option value="">Bayas</option>
     </select>
+    <select id="selecValue">
+      <option value="0" selected disabled>Ordenar</option>
+    </select>
     <input type="submit" value="Filtrar" id="btnSP">
-  </form>
+    <input type="button" value="Reset" id="btnReset">
+  <h4>Filtrado<span id="mostrarFiltro"></span></h4>
+</form>
   </div>
 </article>
 <article id="products">
