@@ -125,25 +125,27 @@ li a {
 .selecProducts {
   background-color: var(--second-variable-color);
   width: 100%;
-  height: 120px;
-  margin: auto auto;
-  display: flex;
+  height: 160px;
+  display: inline-block;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  padding: .5em 2em;
 }
+
 
 .selecProducts h4,
 span {
   display: inline-block;
-  margin-left: 0.5em;
+  margin: .6em .3em;
+  text-align: center;
   color: var(--text-variable02-color);
 }
 
 .selecProducts select {
-  width: 120px;
+  width: 130px;
   height: 30px;
-  margin: 1em 1em;
+  margin: 1.5em .5em;
   border-radius: 5px;
   padding-left: 0.5em;
 }
@@ -159,14 +161,10 @@ input[type="button"] {
   cursor: pointer;
 }
 
+
 .selecProducts input[type="submit"]:hover,
 input[type="button"]:hover {
   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.3);
-}
-
-.selecProducts input[type="submit"]:disabled {
-  pointer-events: none;
-  background-color: #aa975d;
 }
 
 /* PAG PRODUCTS SELECTION*/
@@ -339,12 +337,15 @@ footer ul li a {
 
 
 .copy {
-  /* background-color: #d9ad29; */
   padding-top: 1em;
-  /* width: 100vw; */
   height: 50px;
   font-weight: 800;
   color: white;
   text-align: center;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
+}
+
+.copy span {
+  display: block;
+  margin-top: -.1em;
 }
