@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Inicio de Sesión</title>
+</head>
+<body class="container-log">
+    <div class="center">
+        <div class="btns">
+            <a class="box1" href="#">Inicio de Sesión</a>
+            <a class="box2" href="#">Registrarte</a>
+        </div>
+        <div class="signup">
+        <div class="header__title">Registrarte</div>
+        <div class="signupError"></div>
+        <form action="index.html" method="post" name="signupForm" onsubmit="return validarsignup()">
+            <input type="text" name="nombre" autocomplete="off" placeholder="Nombre">
+            <input class="lastn" name="apellido" type="text" autocomplete="off" placeholder="Apellido">
+            <input class="email" name="email" type="email" autocomplete="off" placeholder="Email">
+            <input class="email" name="password" type="password" autocomplete="off" placeholder="Contraseña">
+            <input type="submit" value="Registrarse">
+            <!-- class="signup_btnS" --> 
+        </form>
+        </div>
+        <div class="login">
+        <div class=" header__title">Iniciar Sesión</div>
+        <form action="products.html">
+            <input class="email" type="email" placeholder="Email">
+            <input class="email" type="password" placeholder="Contraseña">
+            <input type="submit" value="Iniciar Sesión">
+            <!-- class="login_btnS" -->
+        </form>
+        </div>
+
+    </div>
+
+    <script src="user.js" type="module"></script>
+</body>
+</html>
