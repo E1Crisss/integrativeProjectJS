@@ -15,12 +15,12 @@
         </div>
         <div class="signup">
         <div class="header__title">Registrarte</div>
-        <div class="signupError"></div>
-        <form action="index.html" method="post" name="signupForm" onsubmit="return validarsignup()">
-            <input type="text" name="nombre" autocomplete="off" placeholder="Nombre">
-            <input class="lastn" name="apellido" type="text" autocomplete="off" placeholder="Apellido">
-            <input class="email" name="email" type="email" autocomplete="off" placeholder="Email">
-            <input class="email" name="password" type="password" autocomplete="off" placeholder="Contraseña">
+        <div class="signupError"><p></p></div>
+        <form action="index.html" method="POST" name="signupForm" id="form">
+            <input  id="nombre" name="nombre" type="text" autocomplete="off" placeholder="Nombre">
+            <input class="lastn" id="apellido" type="text" autocomplete="off" placeholder="Apellido">
+            <input class="email" id="email" type="email" autocomplete="off" placeholder="Email">
+            <input class="email" id="password" type="password" autocomplete="off" placeholder="Contraseña">
             <input type="submit" value="Registrarse">
             <!-- class="signup_btnS" --> 
         </form>
@@ -36,7 +36,7 @@
         </div>
 
     </div>
-
+    <script src="main.js" type="module"></script>
     <script src="user.js" type="module"></script>
 </body>
 </html>

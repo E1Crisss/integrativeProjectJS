@@ -356,7 +356,9 @@ footer ul li a {
 /* ESTILOS PARA FORM */
 
 .container-log{
-  background-color: black;
+  background: url(https://burst.shopifycdn.com/photos/a-colorful-fruit-cart-on-wheels.jpg?width=925&format=pjpg&exif=1&iptc=1)
+    center center no-repeat;
+  background-size: cover;
   margin: 0; padding:0; 
   height: 100vh;
   overflow: hidden;
@@ -377,7 +379,7 @@ footer ul li a {
 }
 
 .center{
-  margin: 70px auto;
+  margin: 60px auto;
   width: 540px;
   border: 1px solid var(--second-bg-color);
   border-radius: 5px ;
@@ -457,3 +459,4 @@ form input[type="submit"]:hover{
   border: 3px;
   display: none;
 }
+
